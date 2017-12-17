@@ -1,0 +1,66 @@
+#include "master.h"
+#include<stdio.h>
+int main(int argc, char **argv)
+{
+	int i;
+	char *query_word;
+	char *director;
+	char *k;
+
+	for(i = 1; i < argc; ++i) { //argument
+		if(strcmp(argv[i], "-q") == 0) {
+			query_word = argv[++i];
+		} else if(strcmp(argv[i], "-d") == 0) {
+			director = argv[++i];
+		} else if(strcmp(argv[i], "-s") == 0) {
+			k = argv[++i];
+		}
+	}
+
+
+}
+
+int send_to_fd(int sysfs_fd, struct mail_t *mail)
+{
+	/*
+	 * write something or nothing
+	 */
+
+	//int ret_val = write(sysfs_fd, ...);
+	//if (ret_val == ERR_FULL) {
+	/*
+	 * write something or nothing
+	 */
+	//} else {
+	/*
+	 * write something or nothing
+	 */
+	//}
+
+	/*
+	 * write something or nothing
+	 */
+}
+
+int receive_from_fd(int sysfs_fd, struct mail_t *mail)
+{
+	/*
+	 * write something or nothing
+	 */
+
+	//int ret_val = read(sysfs_fd, ...);
+	//if (ret_val == ERR_EMPTY) {
+	/*
+	 * write something or nothing
+	 */
+	//} else {
+	/*
+	 * write something or nothing
+	 */
+	//}
+
+	/*
+	 * write something or nothing
+	 */
+}
+
